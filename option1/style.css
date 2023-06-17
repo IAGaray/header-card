@@ -48,6 +48,7 @@ body{
 .header .nav-links li a:hover{
     color: #4caa5b;
 }
+/* Comienzo creación de menú */
 .menu{
     display: none;
 }
@@ -131,6 +132,9 @@ body{
         right: 35px;
     }
 }
+/* Fin de flexbox responsive */
+
+/* Comienzo de stilos para card */
 .card{
     position: relative;
     width: 300px;

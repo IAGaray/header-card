@@ -19,8 +19,7 @@ body{
 }
 .header .logo{
     cursor: pointer;
-    order: 3;
-    margin-left: auto;
+    margin-left:auto;
 }
 .header .logo img{
     height: 70px;
@@ -49,16 +48,169 @@ body{
 .header .nav-links li a:hover{
     color: #4caa5b;
 }
-.header .btn button{
+.menu{
+    display: none;
+}
+.header .btn button,
+.header .menu button{
     font-weight: 700;
-    color: #ffffff;
+    color: #e6e6e6;
     padding: 9px 25px;
-    background: #eceff1;
+    background: #595c5e;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-.header .btn button:hover{
-    background-color: #eceff1;
+.header .btn button:hover,
+.header .menu button:hover{
+    background-color: #236794;
     color: #ffbc0f;
     transform: scale(1.1);
 }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+@media  screen and (max-width: 800px) {
+    .nav-links, .btn{
+        display: none;
+    }
+    .menu{
+        display: inherit;
+    }
+}
+
+.header a{
+    text-decoration: none;
+
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+    color: #ffbc0e;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+/* Fin de flexbox responsive */
+
+/* Comienzo de stilos para card */
+.card{
+    margin: 20px;
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px)rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: rgba(0,0,0,0,.4);
+    text-align: center;
+    color:#ffffff;
+}
+.card .back {
+/* Mejorar justify-content*/
+    transform: perspective(600px)rotateY(180deg);
+    background: rgb(3, 35,54);
+    padding: 15px;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link{
+    border-top: solid 1px #eceff1;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #ffffff;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px)rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px)rotateY(360deg);
+}
+/* Fin de la creación de Card */

@@ -62,6 +62,7 @@ body{
     color: #ffbc0f;
     transform: scale(1.1);
 }
+/* Comienzo de stilos para card */
 .container{
     display: flex;
     align-items: center;
@@ -69,7 +70,6 @@ body{
     min-height: 100vh;
     flex-wrap: wrap;
 }
-/* Creación de la card */
 .card{
     margin: 20px;
     position: relative;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document 3</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/img/pet.ico"> 
+    <link rel="icon" type="image/x-icon" href="/img/pet.ico">
 </head>
 <body>
     <header class="header">
@@ -21,6 +21,87 @@
             </ul>
         </nav>
         <a href="" class="btn"><button>Contact</button></a>
+        <!-- Creación del menú responsive -->
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" class="close" href="#">&times;</a>
+            <div class="overlay-content">
+                <li><a href="#">Servicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </div>
     </header>
+    <script type="text/javascript" src="nav.js"></script>
+    <!-- Fin menú -->
+    </header>
+    <section class="container">
+        <div class="card">
+            <div class="face front">
+                <img src="../img/gatito.jpg" width="280" height="300" style="max-width:100%;height:auto;" alt="">
+                <h3>Gato Blanco</h3>
+            </div>
+            <div class="face back">
+                <h3>Gato Blanco</h3>
+                <p>Lorem ipsum dolor,
+                    sit amet consectetur
+                    adipisicing elit. Cupiditate
+                    labore quam molestias eum
+                    deserunt ipsam, eius, nihil
+                    doloribus, voluptatibus
+                    explicabo iste voluptatum
+                    vero atque! Quis iusto voluptas
+                    dolorum laboriosam placeat!</p>
+
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="../img/gatito1.jpg" width="280" height="300" style="max-width:100%;height:auto;" alt="">
+                <h3>Gato Salmon</h3>
+            </div>
+            <div class="face back">
+                <h3>Gato Salmon</h3>
+                <p>Lorem ipsum dolor,
+                    sit amet consectetur
+                    adipisicing elit. Cupiditate
+                    labore quam molestias eum
+                    deserunt ipsam, eius, nihil
+                    doloribus, voluptatibus
+                    explicabo iste voluptatum
+                    vero atque! Quis iusto voluptas
+                    dolorum laboriosam placeat!</p>
+
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="../img/gatito2.jpg" width="280" height="300" style="max-width:100%;height:auto;" alt="">
+                <h3>Gato Peinado</h3>
+            </div>
+            <div class="face back">
+                <h3>Gato Peinado</h3>
+                <p>Lorem ipsum dolor,
+                    sit amet consectetur
+                    adipisicing elit. Cupiditate
+                    labore quam molestias eum
+                    deserunt ipsam, eius, nihil
+                    doloribus, voluptatibus
+                    explicabo iste voluptatum
+                    vero atque! Quis iusto voluptas
+                    dolorum laboriosam placeat!</p>
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
