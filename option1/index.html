@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/pet.ico">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/img/dogwalking.svg" alt="Walking with the dog">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Servicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn"><button>Contact</button></a>
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" class="close" href="#">&times;</a>
+            <div class="overlay-content">
+                <li><a href="#">Servicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </div>
+    </header>
+    <script type="text/javascript" src="nav.js"></script>
+</body>
+
+</html>
